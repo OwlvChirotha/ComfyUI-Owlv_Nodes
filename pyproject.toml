@@ -1,0 +1,30 @@
+[project]
+name = "comfyui-owlv-nodes"
+description = "A collection of custom utility nodes for ComfyUI with OwlV brand. Includes Save Image (Dir) node with custom export path support."
+version = "1.0.0"
+license = { file = "LICENSE" }
+readme = "README.md"
+
+authors = [
+    { name = "OwlvChirotha", email = "" }
+]
+
+keywords = ["comfyui", "custom-nodes", "image", "save", "export"]
+
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Topic :: Multimedia :: Graphics",
+]
+
+requires-python = ">=3.8"
+
+[project.urls]
+Repository = "https://github.com/OwlvChirotha/ComfyUI-Owlv_Nodes"
+Issues = "https://github.com/OwlvChirotha/ComfyUI-Owlv_Nodes/issues"
+
+[tool.comfy]
+PublisherId = "OwlvChirotha"
+DisplayName = "ComfyUI-Owlv_Nodes 🦉| OwlV"
+Icon = ""
+
