@@ -22,6 +22,8 @@ An enhanced version of ComfyUI's official save_image node with custom export pat
 - ✅ Supports PNG metadata (prompt, workflow info)
 - ✅ Automatically creates directories if they don't exist
 - ✅ Automatic file name conflict resolution
+- ✅ Panel preview support with temporary copy mechanism
+- ✅ Auto-cleanup of temporary preview files
 
 **Input Parameters:**
 - `images`: Images to save (required)
@@ -36,6 +38,13 @@ An enhanced version of ComfyUI's official save_image node with custom export pat
    - Check `use_custom_path`
    - Enter an absolute path in `custom_path` (e.g., `D:\MyImages\Output`)
 4. If `use_custom_path` is not checked, images will be saved to ComfyUI's default output folder
+
+**About Temporary Preview Files:**
+- When custom path is enabled, a temporary copy is created in `output/save_image_dir_temp/` for panel preview
+- Original files are always saved to your specified custom path
+- Temporary files are automatically cleaned on each run
+- The last run's images will remain - you can clean them up manually or leave them be
+- A `README.txt` file in the temp folder explains its purpose
 
 ### Installation
 
@@ -93,6 +102,8 @@ ComfyUI自定义实用节点集合，提供多种实用的小工具和多功能�
 - ✅ 支持PNG元数据（prompt、workflow信息）
 - ✅ 自动创建不存在的目录
 - ✅ 自动处理文件名冲突
+- ✅ 支持节点面板预览（临时副本机制）
+- ✅ 自动清理临时预览文件
 
 **输入参数：**
 - `images`: 要保存的图像（必需）
@@ -107,6 +118,13 @@ ComfyUI自定义实用节点集合，提供多种实用的小工具和多功能�
    - 勾选 `use_custom_path`
    - 在 `custom_path` 中输入绝对路径（例如：`D:\MyImages\Output`）
 4. 如果不勾选 `use_custom_path`，将使用ComfyUI默认的output文件夹
+
+**关于临时预览文件：**
+- 启用自定义路径时，会在 `output/save_image_dir_temp/` 创建临时副本用于节点面板预览
+- 原始文件始终保存在您指定的自定义路径中
+- 临时文件会在每次运行时自动清理
+- 最后一次运行的图像会保留 - 您可以手动清理或不管它
+- 临时文件夹内有 `README.txt` 文件说明其用途
 
 ### 安装方法
 

@@ -1,7 +1,7 @@
 [project]
 name = "comfyui-owlv-nodes"
 description = "A collection of custom utility nodes for ComfyUI with OwlV brand. Includes Save Image (Dir) node with custom export path support."
-version = "1.0.0"
+version = "1.1.0"
 license = { file = "LICENSE" }
 readme = "README.md"
 
